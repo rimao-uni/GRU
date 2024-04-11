@@ -10,7 +10,7 @@ GRUは、以下の構成要素からなる：
 ・リセットゲート（Reset Gate）： ネットワークが以前の情報をどれだけ忘れるかを制御
 
 以下にGRUセルの図と更新式を示す。  
-
+<img src="https://github.com/rimao-uni/GRU/assets/117995370/500c72ad-873f-43d1-b854-3345385b700b" height="400">
 
 Source : [http://dprogrammer.org/rnn-lstm-gru](http://dprogrammer.org/rnn-lstm-gru)
 
