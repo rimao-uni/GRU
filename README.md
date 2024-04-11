@@ -11,6 +11,9 @@ GRUは、以下の構成要素からなる：
 
 以下にGRUセルの図と更新式を示す。  
 
+
+Source : [http://dprogrammer.org/rnn-lstm-gru](http://dprogrammer.org/rnn-lstm-gru)
+
 $$z_t = \sigma(W_z [x_t,h_{t-1}])$$
 
 $$r_t = \sigma(W_r[x_t, h_{t-1}])$$
@@ -20,5 +23,15 @@ $$h_t = \tanh(W_h[x_t,r_t \circ h_{t-1}])$$
 $$h_t = (1 -z_t) \circ \tilde h_{t-1} + z_t \circ h_t$$
 
 
-
 GRUは、LSTMと比較してメモリ消費量が少なく、計算量も少ないため、実装が比較的簡単であり、小さなデータセットや計算資源が限られている環境での利用に適している。
+
+## Requirement
+```
+torch==1.9.0
+pandas==1.3.3
+matplotlib==3.4.3
+```
+
+## References
+Christopher Olah氏のブログ記事 : [Tensorflow vs PyTorch for Text Classification using GRU](https://medium.com/swlh/tensorflow-vs-pytorch-for-text-classification-using-gru-e95f1b68fa2d)  
+LONG SHORT-TERM MEMORY : [Paper](https://arxiv.org/abs/1412.3555)
