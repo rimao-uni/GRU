@@ -13,9 +13,11 @@ GRUは、以下の構成要素からなる：
 
 $$z_t = \sigma(W_z [x_t,h_{t-1}])$$
 
-\bm{r}_t &amp;= \sigma (\bm{W}_{r}[\bm{x}_t, h_{t-1}]) 
-\tilde{\bm{h}}_t &amp;= \tanh (\bm{W}_{h}[\bm{x}_{t}, \bm{r}_t \circ \bm{h}_{t-1}  ]) 
-\bm{h}_t &amp;= (1 -\bm{z}_t) \circ \tilde{\bm{h}}_{t-1} + \bm{z}_t \circ \bm{h}_t
+$$r_t = \sigma(W_r[x_t, h_{t-1}])$$
+
+$$h_t = \tanh(W_h[x_t,r_t \circ h_{t-1}])$$
+
+$$h_t = (1 -z_t) \circ \tilde h_{t-1} + z_t \circ h_t$$
 
 
 
