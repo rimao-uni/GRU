@@ -1,12 +1,11 @@
 # GRU
 
-
 ## Description
 GRU（Gated Recurrent Unit）は、リカレントニューラルネットワーク（RNN）の一種であり、主に時系列データを扱うためのモデルである。GRUは、LSTM（Long Short-Term Memory）と同様に、シーケンスデータの長期的な依存関係をモデル化するために設計されるが、より単純な構造を持ち、パラメータの数が少ないという特徴がある。
 
 GRUは、以下の構成要素からなる：
 
-・更新ゲート（Update Gate）： ネットワークが前のタイムステップの情報をどれだけ重要視するかを制御
+・更新ゲート（Update Gate）： ネットワークが前のタイムステップの情報をどれだけ重要視するかを制御　　
 ・リセットゲート（Reset Gate）： ネットワークが以前の情報をどれだけ忘れるかを制御
 
 以下にGRUセルの図と更新式を示す。  
@@ -35,5 +34,4 @@ matplotlib==3.4.3
 ```
 
 ## References
-Christopher Olah氏のブログ記事 : [Tensorflow vs PyTorch for Text Classification using GRU](https://medium.com/swlh/tensorflow-vs-pytorch-for-text-classification-using-gru-e95f1b68fa2d)  
-LONG SHORT-TERM MEMORY : [Paper](https://arxiv.org/abs/1412.3555)
+Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling : [Paper](https://arxiv.org/abs/1412.3555)
