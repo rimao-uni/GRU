@@ -11,9 +11,9 @@ GRUは、以下の構成要素からなる：
 
 以下にGRUセルの図と更新式を示す。  
 
-$$\bm{z}_t &amp;= \sigma (\bm{W}_{z} [\bm{x}_{t}, \bm{h}_{t-1}])$$
+$$z_t = \sigma(W_z [x_t,h_{t-1}])$$
 
-\bm{r}_t &amp;= \sigma (\bm{W}_{r}[\bm{x}_{t}, \bm{h}_{t-1}]) 
+\bm{r}_t &amp;= \sigma (\bm{W}_{r}[\bm{x}_t, h_{t-1}]) 
 \tilde{\bm{h}}_t &amp;= \tanh (\bm{W}_{h}[\bm{x}_{t}, \bm{r}_t \circ \bm{h}_{t-1}  ]) 
 \bm{h}_t &amp;= (1 -\bm{z}_t) \circ \tilde{\bm{h}}_{t-1} + \bm{z}_t \circ \bm{h}_t
 
